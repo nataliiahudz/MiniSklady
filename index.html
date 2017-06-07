@@ -29,13 +29,16 @@
     <link rel='stylesheet' id='Titillium+Web-css' href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700'>
 
     <!-- CSS -->
-    <link rel='stylesheet' id='global-css' href='css/global.css'>
-    <link rel='stylesheet' id='structure-css' href='content/billiard/css/structure.css'>
-    <link rel='stylesheet' id='local-css' href='content/billiard/css/billiard.css'>
     <link rel='stylesheet' href='content/billiard/css/bootstrap.css'>
     <link rel='stylesheet' href="content/billiard/css/font-awesome.css" rel="stylesheet">
     <link rel='stylesheet' href="content/billiard/css/bootstrap_skin.css" rel="stylesheet">
+    <link rel='stylesheet' id='global-css' href='css/global.css'>
+    <link rel='stylesheet' id='structure-css' href='content/billiard/css/structure.css'>
+    <link rel='stylesheet' id='local-css' href='content/billiard/css/billiard.css'>
     <link rel='stylesheet' id='custom-css' href='content/billiard/css/custom.css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
@@ -51,27 +54,26 @@
                         <div class="column one">
                             <div class="top_bar_left clearfix">
                                 <div class="logo">
-                                    <a id="logo" href="index-billiard.html" title="BeBilliard - BeTheme"> <img class="scale-with-grid" src="content/billiard/images/billiard.png" alt="" />
-                                    </a>
+                                    <img class="scale-with-grid" src="content/billiard/images/billiard.png" alt="" />
                                 </div>
                                 <!-- <p>+380970222022</p> -->
                                 <div class="menu_wrapper">
                                     <nav id="menu" class="menu-main-menu-container">
                                         <ul id="menu-main-menu" class="menu">
                                             <li id="menu-item-5" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2 current_page_item">
-                                                <a href="index-billiard.html"><span><i class="icon-record"></i>ГОЛОВНА</span></a>
+                                                <a class="scrollto" href="#header"><span><i class="icon-record"></i>ГОЛОВНА</span></a>
                                             </li>
                                             <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/billiard/the-club.html"><span><i class="icon-record"></i>ВАРТІСТЬ</span></a>
+                                                <a class="scrollto" href="#vartist"><span><i class="icon-record"></i>ВАРТІСТЬ</span></a>
                                             </li>
                                             <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/billiard/league.html"><span><i class="icon-record"></i>ЯК МИ ПРАЦЮЄМО</span></a>
+                                                <a class="scrollto" href="#schema"><span><i class="icon-record"></i>ЯК МИ ПРАЦЮЄМО</span></a>
                                             </li>
                                             <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/billiard/school.html"><span><i class="icon-record"></i>ГАЛЕРЕЯ</span></a>
+                                                <a class="scrollto" href="#gallery"><span><i class="icon-record"></i>ГАЛЕРЕЯ</span></a>
                                             </li>
                                             <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                <a href="content/billiard/contact.html"><span><i class="icon-record"></i>КОНТАКТИ</span></a>
+                                                <a class="scrollto" href="#kontakty"><span><i class="icon-record"></i>КОНТАКТИ</span></a>
                                             </li>
                                             <!-- <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom">
                                                 <a target="_blank" href="http://themeforest.net/item/betheme-html-responsive-multipurpose-template/13925633?ref=beantownthemes"><span><span style="color: #FFD1A4; padding: 0;"><i class="icon-record"></i> BUY NOW</span></span></a>
@@ -167,7 +169,8 @@
 
     <section id="skladyPidhod">
                 <div class="container">
-                    <div class="row">
+                    <h2>Міні-склади підходять</h2>
+                    <div class="row skladyPidhodContent">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <img src="">
                             <h5>Власникам інтернет-магазинів</h5>
@@ -181,7 +184,7 @@
                             <h5>Власникам бізнесу</h5>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row skladyPidhodContent">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <img src="">
                             <h5>Автомобілістам</h5>
@@ -195,6 +198,185 @@
                             <h5>Домогосподиням</h5>
                         </div>
                     </div>
+                </div>
+    </section>
+
+    <section id="canSave">
+                <div class="container">
+                    
+                </div>
+    </section>
+
+    <section id="notSave">
+                <div class="container">
+                    <h2>Речі, заборонені для зберігання</h2>
+                    <div class="row skladyPidhodContent">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Живі істоти, тварини, рослини</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Легкозаймисті речовини</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Товари, що швидко псуються (продукти харчування)</h5>
+                        </div>
+                    </div>
+                    <div class="row skladyPidhodContent">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Зброя (а також її деталі та боєприпаси)</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Речовини, які виділяють пари або сильні запахи</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <img src="">
+                            <h5>Токсичні речовини або гази</h5>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="key">
+                <div class="container">
+                    <h2>Кожен склад має свій унікальний ключ та опломбовується після завантаження</h2>
+                    <img src="">
+                </div>
+    </section>
+
+    <section id="perevagy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <p>Чисті та опалювані склади</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <p>Підсвітка у кожному складі</p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <p>Легкий під'їзд автомобілем прямо під склад</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="square">
+                <div class="container">
+                    <h2>Склади різної площі для різних цілей</h2>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>"A"</h3>
+                        <p>10 м&sup2;</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>"Б"</h3>
+                        <p>20 м&sup2;</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <h3>"В"</h3>
+                        <p>30 м&sup2;</p>
+                    </div>
+                </div>
+    </section>
+
+    <section id="komirky">
+                <div class="container">
+                    <h2>Окремо здаємо в оренду комірки</h2>
+                </div>
+    </section>
+
+    <section id="protect">
+                <div class="container">
+                    <h2>Грандіозна система захисту складів 24/7</h2>
+                    <div class="row">
+                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+                            <img src="">
+                            <p>25 камер відеоспостереження</p>
+                       </div>
+                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+                            <img src="">
+                            <p>Повністю огороджена територія</p>
+                       </div>
+                       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+                            <img src="">
+                            <p>3 охоронці</p>
+                       </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="vartist">
+                <div class="container">
+                    <h2>Вартість складу</h2>
+                    <h3>Залишилось акційних 112 м по 100 грн/м&sup2;</h3>
+                </div>
+    </section>
+
+    <section id="dostavka">
+                <div class="container">
+                    <h2>Доставка</h2>
+                    <p>Наші вантажники допоможуть Вам завантажити та розвантажити склад</p>
+                </div>
+    </section>
+
+    <section id="schema">
+                <div class="container">
+                    <h2>Як ми працюємо</h2>
+                    <p>1.</p>
+                    <p>2.</p>
+                    <p>3.</p>
+                    <p>4. Опломбовується</p>
+                </div>        
+    </section>
+
+    <section id="month">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                            <p>Замовте склад на 12 місяців та отримайте знижку 5%</p>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                            <button>Отримати знижку</button>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section id="gallery">
+                <div class="container">
+                    <h2>Галерея</h2>
+                </div>
+    </section>
+
+    <section id="about">
+                <div class="container">
+                    <h2>Про нас</h2>
+                    <p>ттттттттттттттттттт</p>
+                </div>
+    </section>
+
+    <section id="documents">
+                <div class="container">
+                    <h2>Ліцензія/Дозволи/Договори</h2>
+                </div>
+    </section>
+
+    <section id="question">
+                <div class="container">
+                    <h2>Залишились запитання?</h2>
+                    <p>Залиште свої контакти і наш менеджер з Вами зв'яжеться</p>
+                    <button>Залишити контакти</button>
+                </div>
+    </section>
+
+    <section id="kontakty">
+                <div class="container">
+                    <h2>Наші контакти</h2>
+                    <p>м. Львів,<br>вул.Руденська, 34<br>тел.:+38093675098343</p>
+                    <p>Доступ з 9:00 - 18:00<br>Субота з 9:00 - 15:00<br>Неділя - вихідний</p>
                 </div>
     </section>
 
@@ -573,6 +755,8 @@
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <script type="text/javascript" src="js/animations/animations.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
 
     <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

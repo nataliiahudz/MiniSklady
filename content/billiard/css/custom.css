@@ -9,6 +9,18 @@
 	background-position: center;
 	height: 500px;
 }
+#skladyPidhod, #notSave, #key, #perevagy, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #documents, #question{
+	text-align: center;
+}
+.skladyPidhodContent{
+	text-align: center;
+}
+#schema h2{
+	text-align: center;
+}
+#kontakty h2{
+	text-align: center;
+}
 
 
 
