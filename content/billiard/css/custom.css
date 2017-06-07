@@ -1,0 +1,58 @@
+.container {
+	margin: auto;
+}
+#main{
+	background: url(../img/bg_header.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+	.container {
+	width: 65%;
+	}
+}
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
+	.container {
+	width: 69%;
+	}
+}
+@media screen and (min-width: 1501px) and (max-width: 1600px) {
+	.container {
+	width: 73%;
+	}
+}
+@media screen and (min-width: 1401px) and (max-width: 1500px) {
+	.container {
+	width: 78%;
+	}
+}
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+	.container {
+	width: 83%;
+	}
+}
+@media screen and (min-width: 1170px) and (max-width: 1300px) {
+	.container {
+	width: 90%;
+	}
+}
+@media screen and (max-width: 1170px) {
+	.container {
+	width: 99%;
+	}
+}
