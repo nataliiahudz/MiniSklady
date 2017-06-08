@@ -38,8 +38,7 @@ body:not(.template-slider) #Content { padding-top: 30px; }
 
 .section						{ position: relative; }
 
-.section_wrapper,
-.container						{ width: 1200px; margin:0 auto; position:relative;}
+.section_wrapper					{ width: 1200px; margin:0 auto; position:relative;}
 
 .section_wrapper:after,
 .container:after				{ clear: both; content: " "; display: block; height: 0; visibility: hidden;}
@@ -2237,7 +2236,6 @@ body {
 	.aside_both .sections_group		{ margin:0 auto !important;}
 	
 	.section_wrapper,
-	.container,
 	.four.columns					{ max-width: 260px !important; }
 	.mobile-wide .section_wrapper,
 	.mobile-wide .container,
