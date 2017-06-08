@@ -1,6 +1,9 @@
 .container {
 	margin: auto;
 }
+#skladyPidhod, #notSave, #key, #perevagy, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #question{
+	text-align: center;
+}
 #main{
 	background: url(../img/bg_header.png);
 	background-repeat: no-repeat;
@@ -8,6 +11,12 @@
 	background-size: cover;
 	background-position: center;
 	height: 500px;
+}
+#main h2{
+	text-transform: none;
+}
+#main h4{
+	text-transform: none;
 }
 #numbers{
 	background-color: #eae6e2;
@@ -17,9 +26,7 @@
 	font-size: 25px;
 	text-transform: lowercase;
 }
-#skladyPidhod, #notSave, #key, #perevagy, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #documents, #question{
-	text-align: center;
-}
+
 /*#skladyPidhod{
 	background-color: #f5f2f5;
 	padding-top: 100px;
@@ -46,7 +53,7 @@
 #canSave{
 	background-color: #f5f2f5;
 }
-#canSave h2{
+#canSave h3{
 	text-align: center;
 }
 .canSaveContent{
@@ -73,13 +80,13 @@
 .keyContent{
 	border-bottom: 1px solid #b1b2b2;
 }
-.keyContent h2{
+.keyContent h3{
 	margin-bottom: 40px;
 }
-#schema h2{
+#schema h3{
 	text-align: center;
 }
-#kontakty h2{
+#kontakty h3{
 	text-align: center;
 }
 #perevagy{
@@ -87,7 +94,12 @@
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
-
+#about h6{
+	text-align: left;
+}
+#about p{
+	text-align: left;
+}
 
 
 
