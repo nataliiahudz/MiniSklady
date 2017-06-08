@@ -1,8 +1,51 @@
 .container {
 	margin: auto;
 }
+.modalWindow{
+	position: absolute;
+}
+.visible {
+	background: #fff;
+	overflow: hidden;
+	z-index: 200;
+	width: 400px;
+	padding: 0px;
+	text-align: center;
+	position: fixed;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding-bottom: 20px;
+	top:30%;
+}
+.visible .fa {
+	font-size: 26px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+.overlay {
+	background: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	opacity: 0.7;
+}
+.modalWindow input{
+	/*width: 80%;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #skladyPidhod, #notSave, #key, #perevagy, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #question{
 	text-align: center;
+		padding-top: 70px;
+	padding-bottom: 70px;
 }
 #main{
 	background: url(../img/bg_header.png);
@@ -51,7 +94,9 @@
 	margin-bottom: 15px;
 }*/
 #canSave{
-	background-color: #f5f2f5;
+	background-color:  #eae6e2 /*#f5f2f5*/;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 #canSave h3{
 	text-align: center;
@@ -60,25 +105,25 @@
 	text-align: center;
 }
 #notSave{
-	background-color: #1b7788;
+   /*#1b7788; blue*/
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 .notSaveContent{
 	background-color: white;
-	border-radius: 8px;
-	padding-top: 50px;
+	border-bottom: 1px solid #b1b2b2;
 }
 .notSaveContent h5{
 	text-transform: lowercase;
 }
+#square{
+
+}
 #key{
-	background-color: #eae6e2;
-	padding-top: 80px;
 	padding-bottom: 80px;
 }
 .keyContent{
-	border-bottom: 1px solid #b1b2b2;
+	
 }
 .keyContent h3{
 	margin-bottom: 40px;

@@ -36,6 +36,7 @@
     <link rel='stylesheet' id='structure-css' href='content/billiard/css/structure.css'>
     <link rel='stylesheet' id='local-css' href='content/billiard/css/billiard.css'>
     <link rel='stylesheet' id='custom-css' href='content/billiard/css/custom.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     
@@ -46,6 +47,29 @@
 </head>
 
 <body class="home template-slider layout-full-width mobile-tb-left button-flat no-content-padding header-classic header-fw minimalist-header sticky-header sticky-dark ab-hide subheader-both-center menuo-right footer-copy-center">
+
+
+    <div class="modalWindow">
+       <div class="overlay"></div>
+            <div class="container">
+                <div class="visible">
+                    <div class="visible_content">
+                        <div class="modal_head"></div>
+                        <h5 class="modal_write"></h5>
+                    </div>
+                <div class="modal_close"><i class="fa fa-close"></i></div>
+                    <div class="modal_content">
+                        <form class="ajf" action="modules/ord/sender.php?c=form" method="post">
+                            <input type="text" class="modal_name" id="name" name="name" placeholder="Ім'я"></input>
+                            <input type="tel" class="modal_tel" id="phone" name="phone" placeholder="Контактний телефон"></input>
+                            <!-- <input type="text" class="modal_message" id="message" name="message"> </input><br> -->
+                            <input type="submit" class="modal_submit" value="ЗАМОВИТИ ДЗВІНОК"></input>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <section id="header">
