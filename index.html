@@ -28,48 +28,29 @@
     <link rel='stylesheet' id='Lato-css' href='http://fonts.googleapis.com/css?family=Lato:400,400italic,600,700'>
     <link rel='stylesheet' id='Titillium+Web-css' href='http://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600,700'>
 
+
     <!-- CSS -->
     <link rel='stylesheet' href='content/billiard/css/bootstrap.css'>
     <link rel='stylesheet' href="content/billiard/css/font-awesome.css" rel="stylesheet">
     <link rel='stylesheet' href="content/billiard/css/bootstrap_skin.css" rel="stylesheet">
+
     <link rel='stylesheet' id='global-css' href='css/global.css'>
     <link rel='stylesheet' id='structure-css' href='content/billiard/css/structure.css'>
     <link rel='stylesheet' id='local-css' href='content/billiard/css/billiard.css'>
     <link rel='stylesheet' id='custom-css' href='content/billiard/css/custom.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
 
+
 </head>
 
 <body class="home template-slider layout-full-width mobile-tb-left button-flat no-content-padding header-classic header-fw minimalist-header sticky-header sticky-dark ab-hide subheader-both-center menuo-right footer-copy-center">
-
-
-    <div class="modalWindow">
-       <div class="overlay"></div>
-            <div class="container">
-                <div class="visible">
-                    <div class="visible_content">
-                        <div class="modal_head"></div>
-                        <h5 class="modal_write"></h5>
-                    </div>
-                <div class="modal_close"><i class="fa fa-close"></i></div>
-                    <div class="modal_content">
-                        <form class="ajf" action="modules/ord/sender.php?c=form" method="post">
-                            <input type="text" class="modal_name" id="name" name="name" placeholder="Ім'я"></input>
-                            <input type="tel" class="modal_tel" id="phone" name="phone" placeholder="Контактний телефон"></input>
-                            <!-- <input type="text" class="modal_message" id="message" name="message"> </input><br> -->
-                            <input type="submit" class="modal_submit" value="ЗАМОВИТИ ДЗВІНОК"></input>
-                        </form>
-                    </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <section id="header">
@@ -79,8 +60,8 @@
                             <div class="top_bar_left clearfix">
                                 <div class="logo">
                                     <img class="scale-with-grid" src="content/billiard/images/billiard.png" alt="" />
+                                    <a href="tel:+380675098343"><h5>+380675098343</h5></a>
                                 </div>
-                                <!-- <p>+380970222022</p> -->
                                 <div class="menu_wrapper">
                                     <nav id="menu" class="menu-main-menu-container">
                                         <ul id="menu-main-menu" class="menu">
@@ -125,10 +106,10 @@
 
     <section id="main">
                 <div class="container">
-                    <div>
-                        <h2>Оренда складів 6,8м&sup2; та 15м&sup2; для<br>Вашого бізнесу або<br>для особистих потреб</h2>
-                        <h4>Залишилось акційних 112м&sup2; по 100грн/м</h4>
-                        <button>Отримати свій склад</button>
+                    <div class="mainContent">
+                        <h2>Оренда складів<br>6,8м&sup2; та 15м&sup2; для<br>Вашого бізнесу або<br>для особистих потреб</h2>
+                        <h3 style="padding-top: 0px;">Залишилось акційних<br>112м&sup2; по 100грн/м</h3>
+                        <button data-form="otrymSklad" class="modal_open">Отримати свій склад</button>
                     </div>  
                 </div>  
     </section>
@@ -161,19 +142,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="column one-fourth column_quick_fact">
-                        <div class="quick_fact animate-math">
-                            <div class="animate" data-anim-type="bounceIn">
-                                <div class="number" data-to="572">
-                                    0
-                                </div>
-                                <h3 class="title">задоволених клієнтів</h3>
-                                <hr class="hr_narrow" />
-                                <div class="desc"></div>
-                            </div>
-                        </div>
-                    </div>
                     
                     <div class="column one-fourth column_quick_fact">
                         <div class="quick_fact animate-math">
@@ -191,110 +159,77 @@
                 </div>
     </section> <!-- numbers -->
 
-   <!--  <section id="skladyPidhod">
-                <div class="container">
-                    <h2>Міні-склади підходять</h2>
-                    <div class="row skladyPidhodContent">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/market.png">
-                            <h5>Власникам<br>інтернет-магазинів</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/sport.png">
-                            <h5>Спортсменам</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/business.png">
-                            <h5>Власникам бізнесу</h5>
-                        </div>
-                    </div>
-                    <div class="row skladyPidhodContent">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/car.png">
-                            <h5>Автомобілістам</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/event.png">
-                            <h5>Організаторам подій</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="content/billiard/img/house.png">
-                            <h5>Домогосподиням</h5>
-                        </div>
-                    </div>
-                </div>
-    </section> -->
-
+   
     <section id="canSave">
                 <div class="container canSaveContent">
                     <h3>Mожна зберігати</h3>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/1bud.png">
                             <p>Будівельні матеріали</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
-                            <p>Фрхіви документів бізнесу</p>
+                            <img src="content/billiard/img/2arhiv.png">
+                            <p>Архіви документів бізнесу</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/3lito.png">
                             <p>Літній інвентар</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/instr.png">
                             <p>Знаряддя праці</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/elektro.png">
                             <p>Електрообладнання</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/moto.png">
                             <p>Мотоцикли Квадроцикли</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
-                            <p>Зимній інвентар</p>
+                            <img src="content/billiard/img/zyma.png">
+                            <p>Зимовий інвентар</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/mebli.png">
                             <p>Меблі</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/lodka.png">
                             <p>Лодки</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/sport.png">
                             <p>Спортивний інвентар</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/osob.png">
                             <p>Особисте майно</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/odjah.png">
                             <p>Одяг</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/old.png">
                             <p>Старі речі</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/posud.png">
                             <p>Посуд</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/koleso.png">
                             <p>Шини та запчастини</p>
                         </div>
                     </div>
@@ -304,31 +239,31 @@
     <section id="notSave">
                 <div class="container notSaveContent">
                     <h3>Наші склади безпечні, тому що ми не приймаємо наступні речі</h3>
-                    <div class="row skladyPidhodContent">
+                    <div class="row notSaveItem">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave7.png">
                             <p>Живі істоти, тварини, рослини</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave1.png">
                             <p>Легкозаймисті речовини</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave6.png">
                             <p>Товари, що швидко псуються (продукти харчування)</p>
                         </div>
                     </div>
-                    <div class="row skladyPidhodContent">
+                    <div class="row notSaveItem">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave5.png">
                             <p>Зброя (а також її деталі та боєприпаси)</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave4.png">
                             <p>Речовини, які виділяють пари або сильні запахи</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <img src="">
+                            <img src="content/billiard/img/notsave3.png">
                             <p>Токсичні речовини або гази</p>
                         </div>
                     </div>
@@ -343,19 +278,57 @@
     </section>
 
     <section id="perevagy">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <p>Чисті склади</p>
+                <div class="section mcb-section no-margin-h no-margin-v full-width sections_style_0 ">
+                            <div class="mcb-section-inner">
+                                <div class="wrap mcb-wrap one clearfix">
+                                    
+                                    <div class="column mcb-column col-lg-4 col-md-4 col-sm-4 col-xs-12 column_trailer_box ">
+                                        <div class="trailer_box">
+                                         <a>
+                                         <img class="scale-with-grid" src="content/billiard/images/home_billiard_trailerbox_1.jpg" alt="Sign up to Billiard School" width="960" height="600" />
+                                                <div class="desc">
+                                                    <div class="subtitle">
+                                                        1st hour for free
+                                                    </div>
+                                                    <h2>Чисті склади</h2>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="column mcb-column col-lg-4 col-md-4 col-sm-4 col-xs-12 column_trailer_box ">
+                                        <div class="trailer_box">
+                                            <a>
+                                            <img class="scale-with-grid" src="content/billiard/images/home_billiard_trailerbox_2.jpg" alt="Become a league player" width="960" height="600" />
+                                                <div class="desc">
+                                                    <div class="subtitle">
+                                                        Welcome everybody
+                                                    </div>
+                                                    <h2>Підсвітка у кожнму складі</h2>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </a>  
+                                        </div>
+                                    </div>
+                                    <div class="column mcb-column col-lg-4 col-md-4 col-sm-4 col-xs-12 column_trailer_box ">
+                                        <div class="trailer_box">
+                                            <a>
+                                            <img class="scale-with-grid" src="content/billiard/images/home_billiard_trailerbox_2.jpg" alt="Become a league player" width="960" height="600" />
+                                                <div class="desc">
+                                                    <div class="subtitle">
+                                                        Welcome everybody
+                                                    </div>
+                                                    <h2>Під'їзд автомобiлем під склад</h2>
+                                                    <div class="line"></div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <p>Підсвітка у кожному складі</p>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <p>Легкий під'їзд автомобілем прямо під склад</p>
-                        </div>
-                    </div>
-                </div>
+
     </section>
 
     <section id="square">
@@ -380,7 +353,7 @@
                 <div class="container">
                     <h3>Окремо здаємо в оренду комірки</h3>
                     <img src="">
-                    <button>Орендувати комірку</button>
+                    <button data-form="orendaKomirky" class="modal_open">Орендувати комірку</button>
                 </div>
     </section>
 
@@ -389,26 +362,28 @@
                     <h3>Система захисту складів 24/7</h3>
                     <div class="row">
                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                            <img src="">
-                            <p>9 камер відеоспостереження</p>
+                            <img src="content/billiard/img/2.png">
+                            <p>9 камер<br>відеоспостереження</p>
                        </div>
                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                            <img src="">
-                            <p>Повністю огороджена територія</p>
+                            <img src="content/billiard/img/3.png">
+                            <p>Повністю огороджена<br>територія</p>
                        </div>
                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
-                            <img src="">
-                            <p>Цілодобовий нагляд охоронців</p>
+                            <img src="content/billiard/img/1.png">
+                            <p>Цілодобовий нагляд<br>охоронців</p>
                        </div>
                     </div>
                 </div>
     </section>
 
-    <section id="vartist">
+
+    <!-- <div id=#var></div> -->
+    <section id="vartist" style="padding-top:60px;"><br>
                 <div class="container">
-                    <h4>Акційна пропозиція</h4>
-                    <h3>Залишилось акційних 112 м по 100 грн/м&sup2;</h3>
-                    <button>Забронювати вже</button>
+                    <h3>Акційна пропозиція<br>
+                    Залишилось акційних 112 м по 100 грн/м&sup2;</h3>
+                    <button data-form="bron" class="modal_open">Забронювати вже</button>
                 </div>
     </section>
 
@@ -420,7 +395,8 @@
                 </div>
     </section>
 
-    <section id="schema">
+    
+    <section id="schema"><br>
                 <div class="container">
                     <h3>Як ми працюємо</h3>
                     <p>1. Ви обираєте потрібного Вам розміру склад</p>
@@ -437,15 +413,56 @@
                             <p>Замовте склад на 12 місяців та отримайте знижку 5%</p>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                            <button>Отримати знижку</button>
+                            <button data-form="otrymZnyzku" class="modal_open">Отримати знижку</button>
                         </div>
                     </div>
                 </div>
     </section>
 
-    <section id="gallery">
-                <div class="container">
+    <section id="gallery"><br><br>
+                <div class="container"><br>
                     <h3>Галерея</h3>
+
+                    <div id="testCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#testCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#testCarousel" data-slide-to="1"></li>
+        <li data-target="#testCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="img/carousel-bootstrap-slide1.jpg" alt="...">
+            <div class="carousel-caption">
+                Дополнительная информация слайда 1
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/carousel-bootstrap-slide2.jpg" alt="...">
+            <div class="carousel-caption">
+                Дополнительная информация слайда 2
+            </div>
+        </div>
+        <!-- Слайд 3 -->
+        <div class="item">
+            <img src="img/carousel-bootstrap-slide3.jpg" alt="...">
+            <div class="carousel-caption">
+                Дополнительная информация слайда 3
+            </div>
+        </div>
+    </div>
+
+    <!-- Навигация карусели (следующий или предыдущий слайд) -->
+    <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+    <a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+    <a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
                 </div>
     </section>
 
@@ -470,23 +487,23 @@
                 <div class="container">
                     <h3>Залишились запитання?</h3>
                     <p>Залиште свої контакти і наш менеджер з Вами зв'яжеться</p>
-                    <button>Залишити контакти</button>
+                    <button data-form="kontakty" class="modal_open">Залишити контакти</button>
                 </div>
     </section>
 
-    <section id="kontakty">
+    <section id="kontakty"><br>
                 <div class="container">
                     <h3>Наші контакти</h3>
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <p>м. Львів,<br>вул.Руденська, 34<br>тел.:+38093675098343<br>e-mail:</p>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 adress">
+                            <p>м. Львів,<br>вул.Руденська, 34<br><a href="tel:+380675098343">тел.:+380675098343</a><br>e-mail:</p>
                             <p>Робочий графік:<br>Будні з 9:00 - 18:00<br>Субота з 9:00 - 15:00</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                            <form>
+                            <form class="ajf" action="modules/ord/sender.php?c=form" method="post">
                                 <input type="text" name="name" placeholder="Ім'я">
                                 <input type="text" name="phone" placeholder="Телефон">
-                                <button>Залишити контакти</button>
+                                <button type="submit" style="width: 230px;">Залишити контакти</button>
                             </form>
                         </div>
                     </div>
@@ -499,7 +516,7 @@
     <section id="map">
                 <div class="container">
                     <div class="map">
-                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10293.927972193014!2d23.95642828812462!3d49.833400402282926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae758d521dbcd%3A0x143d6aad24a8d32b!2z0LLRg9C70LjRhtGPINCg0YPQtNC90LXQvdGB0YzQutCwLCAzNCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1496995680715" width="100%" height="600px;" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
     </section>
@@ -508,7 +525,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <p>тел.: +38093675098343</p>
+                            <a href="tel:+380675098343"><p>тел.: +380675098343</p></a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <img src="">
@@ -520,11 +537,34 @@
                 </div>
     </section>
 
-  
+    <div class="modalWindow">
+       <div class="overlay"></div>
+            <div class="container">
+                <div class="visible">
+                    <div class="visible_content">
+                        <h5 class="modal_head"></h5>
+                        <h6 class="modal_write"></h6>
+                        <div class="info-message"></div>
+                    </div>
+                <div class="modal_close"><i class="fa fa-close"></i></div>
+                    <div class="modal_content">
+                        <form class="ajf" action="modules/ord/sender.php?c=form" method="post">
+                            <input type="text" class="modal_name" id="name" name="name" placeholder="Ім'я"></input>
+                            <input type="tel" class="modal_tel" id="phone" name="phone" placeholder="Контактний телефон"></input>
+                            <!-- <input type="text" class="modal_message" id="message" name="message"> </input><br> -->
+                            <input type="submit" class="modal_submit" value="ЗАМОВИТИ ДЗВІНОК"></input>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
    
     <!-- JS -->
 
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/mfn.menu.js"></script>
     <script type="text/javascript" src="js/jquery.plugins.js"></script>

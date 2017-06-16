@@ -1,7 +1,9 @@
+
 .container {
 	margin: auto;
 }
 .modalWindow{
+	display: none;
 	position: absolute;
 }
 .visible {
@@ -17,7 +19,10 @@
 	left: 0;
 	right: 0;
 	padding-bottom: 20px;
-	top:30%;
+	top:20%;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
 }
 .visible .fa {
 	font-size: 26px;
@@ -42,10 +47,26 @@
 	margin-right: auto;
 }
 
-#skladyPidhod, #notSave, #key, #perevagy, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #question{
+#skladyPidhod, #notSave, #key, #square, #komirky, #protect, #vartist, #dostavka, #month, #gallery, #about, #question{
 	text-align: center;
-		padding-top: 70px;
 	padding-bottom: 70px;
+	padding-top: 40px;
+}
+#schema, #kontakty{
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+p{
+	font-size: 19px;
+	font-weight: 100;
+}
+h3{
+	padding-top: 55px;
+	padding-bottom: 40px;
+}
+button{
+	font-weight: bold;
+	font-size: 17px;
 }
 #main{
 	background: url(../img/bg_header.png);
@@ -61,48 +82,44 @@
 #main h4{
 	text-transform: none;
 }
+.mainContent{
+	padding-top: 80px;
+}
+.mainContent button{
+	/*position: absolute;
+	right: 18%;*/
+	float: right;
+}
 #numbers{
 	background-color: #eae6e2;
 	padding-top: 80px;
 }
+#numbers .container{
+	border-bottom: 1px solid #b1b2b2;
+	padding-bottom: 30px;
+}
 #numbers h3{
 	font-size: 25px;
 	text-transform: lowercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-
-/*#skladyPidhod{
-	background-color: #f5f2f5;
-	padding-top: 100px;
-	padding-bottom: 20px;
+.one-fourth.column, .four.columns{
+	width: 30%;
 }
-#skladyPidhod h2{
-	margin-bottom: 50px;
-}
-#skladyPidhod h5{
-	text-transform: lowercase;
-}
-.skladyPidhodContent{
-	text-align: center;
-	margin-bottom: 50px;
-}
-.skladyPidhodContent div{
-	margin-bottom: 50px;
-}
-.skladyPidhodContent img{
-	width: 120px;
-	border-radius: 9px;
-	margin-bottom: 15px;
-}*/
 #canSave{
 	background-color:  #eae6e2 /*#f5f2f5*/;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 130px;
 }
 #canSave h3{
 	text-align: center;
 }
 .canSaveContent{
 	text-align: center;
+}
+.canSaveContent img{
+	height: 160px;
 }
 #notSave{
    /*#1b7788; blue*/
@@ -112,12 +129,28 @@
 .notSaveContent{
 	background-color: white;
 	border-bottom: 1px solid #b1b2b2;
+	padding-bottom: 60px;
 }
 .notSaveContent h5{
 	text-transform: lowercase;
 }
+.notSaveItem{
+	margin-bottom: 60px;
+}
+.notSaveContent img{
+	width: 250px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+}
 #square{
 
+}
+#protect img{
+	height: 130px;
+}
+#vartist .container{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #b1b2b2;
 }
 #key{
 	padding-bottom: 80px;
@@ -128,22 +161,83 @@
 .keyContent h3{
 	margin-bottom: 40px;
 }
+#schema{
+	background-color: #eae6e2;
+}
 #schema h3{
 	text-align: center;
+}
+#month{
+	padding-top: 70px;
+	margin-top: 30px;
+}
+#month p{
+	margin-top: 10px;
+	font-size: 25px;
+}
+.carousel{
+	margin-top: 40px;
+}
+.carousel .item{
+	/*background-color: transparent;*/
+}
+.carousel-indicators .active{
+	background-color: #1b7788;
+	border-color: #1b7788;
+}
+#kontakty{
+	padding-bottom: 70px;
+}
+.adress{
+	padding-top: 30px;
+}
+#kontakty form{
+	background-color: #eae6e2;
+	padding: 15px;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+#kontakty input{
+	width: 100%;
+	font-size: 18px;
 }
 #kontakty h3{
 	text-align: center;
 }
+#kontakty h6{
+	text-align: center;
+	padding-top: 50px;
+}
 #perevagy{
+	overflow: hidden; 
+	position: relative;
+	display: block;
+}
+.column_trailer_box{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#map{
+	margin-bottom: 70px;
+}
+#about{
 	background-color: #eae6e2;
-	padding-top: 80px;
-	padding-bottom: 80px;
 }
 #about h6{
 	text-align: left;
 }
 #about p{
 	text-align: left;
+}
+#footer{
+	background-color: #eae6e2;
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 70px;
+}
+#footer a, #footer p{
+	text-align: center;
 }
 
 
@@ -191,3 +285,14 @@
 	width: 96%;
 	}
 }
+@media only screen and (max-width: 959px) and (min-width: 768px){
+	.container {
+	width: 96%;
+	}
+}
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	.container {
+	width: 96% !important;
+	}
+}
+

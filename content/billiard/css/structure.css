@@ -2236,7 +2236,7 @@ body {
 	.aside_both .sections_group		{ margin:0 auto !important;}
 	
 	.section_wrapper,
-	.four.columns					{ max-width: 260px !important; }
+	.four.columns					{ max-width: 260px; }
 	.mobile-wide .section_wrapper,
 	.mobile-wide .container,
 	.mobile-wide .four.columns		{ max-width: 90% !important; 
@@ -2640,8 +2640,8 @@ body {
     #Wrapper						{ max-width: 480px;}
 	
 	.section_wrapper,
-	.container,
-	.four.columns					{ max-width: 380px !important;}
+	/*.container,*/
+	.four.columns					{ max-width: 380px;}
 
 	.with_aside .content_wrapper 	{ max-width:100%;}
 	
